@@ -1,5 +1,8 @@
 import axios from 'axios';
 import { QueryClient, QueryFunctionContext } from 'react-query';
+import { runMock } from './mock-api';
+
+runMock();
 
 const axiosDefaultQuery = async ({ queryKey }: QueryFunctionContext) => {
   const { data } = await axios.get(queryKey[0] as string, { params: queryKey[1] });
