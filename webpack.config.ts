@@ -17,7 +17,8 @@ const config: Configuration = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
-      // '@hooks': path.resolve(__dirname, 'hooks'),
+      '@api': path.resolve(__dirname, './src/api'),
+      '@components': path.resolve(__dirname, './src/components'),
     },
   },
   entry: {
