@@ -1,4 +1,5 @@
 import AddTodo from '@components/AddTodo';
+import Loader from '@components/Loader';
 import Todo from '@components/Todo';
 import React from 'react';
 import { useQuery } from 'react-query';
