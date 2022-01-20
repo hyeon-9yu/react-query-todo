@@ -12,7 +12,7 @@ const axiosDefaultQuery = async ({ queryKey }: QueryFunctionContext) => {
 export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      notifyOnChangeProps: 'tracked',
+      // notifyOnChangeProps: 'tracked',
       refetchOnWindowFocus: false,
       queryFn: axiosDefaultQuery,
       retry: 2,
