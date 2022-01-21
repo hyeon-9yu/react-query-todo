@@ -16,7 +16,7 @@ const App: React.FC = () => {
     <div>
       <h1>Todo</h1>
       {data?.todos.map((todo) => (
-        <Todo todo={todo} />
+        <Todo key={todo.id} todo={todo} />
       ))}
       <AddTodo />
     </div>

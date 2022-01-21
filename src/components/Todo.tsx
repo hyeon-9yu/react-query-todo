@@ -13,7 +13,10 @@ const Todo: React.FC<Props> = ({ todo }) => {
   return (
     <ul>
       <li>
-        {todo.text} &nbsp; <button type="button">삭제하기</button>
+        {todo.text} &nbsp;{' '}
+        <button type="button" onClick={deleteTodo}>
+          삭제하기
+        </button>
       </li>
     </ul>
   );

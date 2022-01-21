@@ -20,4 +20,4 @@ const AddTodo: React.FC = () => {
   );
 };
 
-export default AddTodo;
+export default React.memo(AddTodo);
